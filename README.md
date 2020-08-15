@@ -1,3 +1,38 @@
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=safinsingh&count_private=true&show_icons=true&title_color=0c45ff&text_color=000&icon_color=0c45ff&include_all_commits=true" />
-</p>
+```javascript
+class Safin {
+  constructor() {
+    this.name = 'Safin Singh'
+    this.interests = [
+      {
+        language: 'typescript',
+        types: ['react', 'node'],
+      },
+      {
+        language: 'go',
+        types: ['cli-tools', 'cybersecurity-automation'],
+      },
+      {
+        language: 'python',
+        types: ['scripting', 'control-theory'],
+      },
+    ]
+  }
+
+  print() {
+    console.log(`Hi! I'm ${this.name}`)
+    console.log(`Some of my interests are:`)
+
+    this.interests.forEach((i) => {
+      process.stdout.write(` - ${i.language}: [`)
+
+      i.types.forEach((t, index) => {
+        process.stdout.write(`${t}`)
+        if (index !== i.types.length - 1) {
+          process.stdout.write(`, `)
+        }
+      })
+      console.log(`]`)
+    })
+  }
+}
+```
