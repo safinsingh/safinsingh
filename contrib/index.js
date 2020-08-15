@@ -23,7 +23,9 @@ https.get(
           )
           toWrite = toWrite.replace(
             '{ REPLACE_THIS_2 }',
-            new Date(new Date().getTime()).toLocaleString('en-US')
+            new Date(new Date().getTime() - 7 * 3600 * 1000).toLocaleString(
+              'en-US'
+            )
           )
           fs.writeFileSync(path.join(__dirname, '..', 'README.md'), toWrite)
         }
