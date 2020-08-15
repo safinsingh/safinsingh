@@ -15,17 +15,17 @@ https.get(
       const dom = new JSDOM(data)
       Array.from(dom.window.document.querySelectorAll('.stat')).forEach((e) => {
         if (e.dataset.testid === 'commits') {
-          const prevReadme = fs.readFileSync(
-            path.join(__dirname, 'template.md'),
-            'utf8',
-            function (err, data) {
-              const toWrite = prevReadme.replace(
-                '{ REPLACE_THIS }',
-                parseFloat(e.textContent.split('k')[0]) * 1000
-              )
-              fs.writeFileSync(path.join(__dirname, '..', 'README.md'), toWrite)
-            }
+          const data = fs.readFileSync(path.join('template.md'), 'utf8')
+
+          let toWrite = data.replace(
+            '{ REPLACE_THIS }',
+            parseFloat(e.textContent.split('k')[0]) * 1000
           )
+          toWrite = toWrite.replace(
+            '{ REPLACE_THIS_2 }',
+            new Date(new Date().getTime()).toLocaleString('en-US')
+          )
+          fs.writeFileSync(path.join(__dirname, '..', 'README.md'), toWrite)
         }
       })
     })
