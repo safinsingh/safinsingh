@@ -19,7 +19,8 @@ jobs:
 
       - name: Update contributions
         run: |
-          npm run build --prefix index.js
+          npm i --prefix contrib
+          npm run build --prefix contrib
 
           git config --global user.name 'Safin Singh'
           git config --global user.email 'safin.singh@gmail.com'
