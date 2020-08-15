@@ -20,7 +20,7 @@ jobs:
       - name: Update contributions
         run: |
           npm i --prefix contrib
-          npm run build --prefix contrib
+          npm run build --prefix contrib ${{ secrets.GRAPHQL_KEY }}
 
           git config --global user.name 'Safin Singh'
           git config --global user.email 'safin.singh@gmail.com'
