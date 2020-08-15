@@ -21,7 +21,9 @@ class Safin {
 
   print() {
     console.log(`Hi! I'm ${this.name}!`)
-    console.log(`I have ${this.githubContribs} open-source contributions!`)
+    console.log(
+      `I have ${this.githubContribs} open-source contributions as of { REPLACE_THIS_2 }!`
+    )
     console.log(`Some of my interests are:`)
 
     this.interests.forEach((i) => {
