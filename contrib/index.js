@@ -1,11 +1,12 @@
-const https = require('https')
-const jsdom = require('jsdom')
 const fs = require('fs')
 const path = require('path')
-const { JSDOM } = jsdom
+const axios = require('axios').default
 
-const query = `query { 
-  viewer { 
+let totalContribs = 0
+
+const token = process.argv[2]
+const query = `query {
+  user(login: "safinsingh") { 
     contributionsCollection {
       totalCommitContributions
       restrictedContributionsCount
@@ -13,34 +14,40 @@ const query = `query {
   }
 }`
 
-//https://api.github.com/search/commits\?q\=author:safinsingh
+axios
+  .post(
+    'https://api.github.com/graphql',
+    {
+      query: query,
+    },
+    {
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
+    }
+  )
+  .then((res) => {
+    Object.keys(res.data.data.user.contributionsCollection).forEach((el) => {
+      totalContribs += res.data.data.user.contributionsCollection[el]
+    })
+    axios
+      .get('https://api.github.com/search/commits?q=author:safinsingh', {
+        headers: {
+          Accept: 'application/vnd.github.cloak-preview',
+        },
+      })
+      .then((res) => {
+        totalContribs += res.data.total_count
+        const data = fs.readFileSync(path.join('template.md'), 'utf8')
 
-// https.get(
-//   'https://github-readme-stats.vercel.app/api?username=safinsingh&count_private=true&include_all_commits=true',
-//   (res) => {
-//     let data = ''
-//     res.on('data', (chunk) => {
-//       data += chunk
-//     })
-//     res.on('end', () => {
-//       const dom = new JSDOM(data)
-//       Array.from(dom.window.document.querySelectorAll('.stat')).forEach((e) => {
-//         if (e.dataset.testid === 'commits') {
-//           const data = fs.readFileSync(path.join('template.md'), 'utf8')
-
-//           let toWrite = data.replace(
-//             '{ REPLACE_THIS }',
-//             parseFloat(e.textContent.split('k')[0]) * 1000
-//           )
-//           toWrite = toWrite.replace(
-//             '{ REPLACE_THIS_2 }',
-//             new Date(new Date().getTime() - 7 * 3600 * 1000).toLocaleString(
-//               'en-US'
-//             )
-//           )
-//           fs.writeFileSync(path.join(__dirname, '..', 'README.md'), toWrite)
-//         }
-//       })
-//     })
-//   }
-// )
+        let toWrite = data.replace('{ REPLACE_THIS }', totalContribs)
+        toWrite = toWrite.replace(
+          '{ REPLACE_THIS_2 }',
+          new Date(new Date().getTime() - 7 * 3600 * 1000).toLocaleString(
+            'en-US'
+          )
+        )
+        fs.writeFileSync(path.join(__dirname, '..', 'README.md'), toWrite)
+      })
+  })
