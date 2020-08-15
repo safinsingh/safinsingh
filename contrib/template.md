@@ -2,7 +2,7 @@
 class Safin {
   constructor() {
     this.name = 'Safin Singh'
-    this.githubContribs = 2200
+    this.githubContribs = '{ REPLACE_THIS }'
     this.interests = [
       {
         language: 'typescript',
