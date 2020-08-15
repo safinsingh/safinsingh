@@ -39,4 +39,7 @@ class Safin {
     })
   }
 }
+
+const safin = new Safin()
+safin.print()
 ```
