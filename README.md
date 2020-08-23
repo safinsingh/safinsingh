@@ -22,7 +22,7 @@ class Safin {
   print() {
     console.log(`Hi! I'm ${this.name}!`)
     console.log(
-      `I have ${this.githubContribs} open-source contributions as of 8/22/2020, 5:11:35 PM!`
+      `I have ${this.githubContribs} total open-source contributions as of 8/22/2020, 5:11:35 PM!`
     )
     console.log(`Some of my interests are:`)
 
