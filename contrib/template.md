@@ -9,7 +9,7 @@ class Safin {
         types: ['react', 'node'],
       },
       {
-        language: 'go',
+        language: 'rust & go',
         types: ['cli-tools', 'cybersecurity-automation'],
       },
       {
