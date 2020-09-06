@@ -2,14 +2,14 @@
 class Safin {
   constructor() {
     this.name = 'Safin Singh'
-    this.githubContribs = '3275'
+    this.githubContribs = '3279'
     this.interests = [
       {
         language: 'typescript',
         types: ['react', 'node'],
       },
       {
-        language: 'go',
+        language: 'rust & go',
         types: ['cli-tools', 'cybersecurity-automation'],
       },
       {
@@ -22,7 +22,7 @@ class Safin {
   print() {
     console.log(`Hi! I'm ${this.name}!`)
     console.log(
-      `I have ${this.githubContribs} open-source contributions as of 9/6/2020, 9:05:01 AM!`
+      `I have ${this.githubContribs} open-source contributions as of 9/6/2020, 11:53:14 AM!`
     )
     console.log(`Some of my interests are:`)
 
