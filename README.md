@@ -1,34 +1,11 @@
-```javascript
-class Safin {
-  constructor() {
-    this.name = 'Safin Singh'
-    this.githubContribs = '3474'
-    this.interests = [
-      {
-        language: 'typescript',
-        types: ['react', 'node'],
-      },
-      {
-        language: 'rust & go',
-        types: ['cli-tools', 'cybersecurity-automation'],
-      },
-      {
-        language: 'python',
-        types: ['scripting', 'control-theory'],
-      },
-    ]
-  }
+<p align="center">
+  <img src="./assets/intro.svg" width="400px" />
+</p>
 
-  print() {
-    console.log(`Hi! I'm ${this.name}!`)
-    console.log(
-      `I have ${this.githubContribs} open-source contributions as of 9/19/2020, 9:05:33 PM!`
-    )
-    console.log(`Some of my interests are:`)
+Hey there! I love [Linux](https://github.com/safinsingh/dots), open source, and programming with Golang, JavaScript, and Rust! Check out my best work on my [website](https://safinsingh.tech), achievements my LinkedIn [profile](https://www.linkedin.com/in/safinsingh), and articles on [Dev.to](https://dev.to/safinsingh).
 
-    this.interests.forEach((i) => {
-      console.log(` - ${i.language}: [${i.types.join(", ")}]`)
-    })
-  }
-}
-```
+Most of my code falls into the categories of bot development, full-stack web applications, and security libraries. Here's some of my programming stats!
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=safinsingh&show_icons=true&count_private=true&hide_title=true&show_owner=true&hide_border=true&include_all_commits=true&icon_color=0762FF&text_color=000000&title_color=0762FF" />
+</p>
