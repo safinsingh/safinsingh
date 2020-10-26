@@ -2,7 +2,7 @@
   <img src="./assets/intro.svg" width="400px" />
 </p>
 
-Hey there! I love [Linux](https://github.com/safinsingh/dot), open source, and programming with Golang, JavaScript, and Rust! Check out my best work on my [website](https://safin.dev), achievements my LinkedIn [profile](https://www.linkedin.com/in/safinsingh), and articles on [Dev.to](https://dev.to/safinsingh).
+Hey there! I love [Linux](https://github.com/safinsingh/dot), open source, and programming with Rust, JavaScript, and Go! Check out my best work on my [website](https://safin.dev), achievements my LinkedIn [profile](https://www.linkedin.com/in/safinsingh), and articles on [Dev.to](https://dev.to/safinsingh).
 
 Most of my code falls into the categories of bot development, full-stack web applications, and security libraries. Here's some of my programming stats!
 
