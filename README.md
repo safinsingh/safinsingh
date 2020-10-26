@@ -2,4 +2,6 @@
   <img src="./assets/intro.svg" width="400px" />
 </p>
 
-Hey there! I love [Linux](https://github.com/safinsingh/dot), open source, and programming with Rust, JavaScript, and Go! Check out my best work on my [website](https://safin.dev), my achievements on [LinkedIn](https://www.linkedin.com/in/safinsingh), and my articles on [Dev.to](https://dev.to/safinsingh).
+<p align="center">
+Hey there! I love <a href="https://github.com/safinsingh/dot">Linux</a>, open source, and programming with Rust, JavaScript, and Go! Check out my best work on my <a href="https://safin.dev">website</a>, my achievements on <a href="https://www.linkedin.com/in/safinsingh">LinkedIn</a>), and my articles on <a href="https://dev.to/safinsingh">Dev.to</a>.
+</p>
