@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="./assets/Untitled drawing.png" width="600px" />
-</p>
-
-Hey! I’m Safin Singh, a self-taught high-school student, full-stack developer, and cybersecurity competitor.
+Hey! I’m **Safin Singh**, a self-taught high-school student, full-stack developer, and cybersecurity competitor.
 
 Be sure to check out my...
  - 📌 Pinned projects
