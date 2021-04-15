@@ -1,6 +1,8 @@
-Hey! I’m **Safin**. I'm a self-taught full-stack developer & cybersecurity competitor by day and high-school student by night.
+## Hey! I’m **Safin**. 
 
-Be sure to check out my...
+I'm a self-taught full-stack developer & cybersecurity competitor by day and high-school student by night.
+
+### Be sure to check out my...
  - 📌 Pinned projects
  - ✨ [Website](https://safin.dev)
  - 🐦 [Twitter](https://twitter.com/safinsingh) 
