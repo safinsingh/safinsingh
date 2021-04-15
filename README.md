@@ -1,4 +1,4 @@
-Hey! I’m **Safin Singh**, a self-taught high-school student, full-stack developer, and cybersecurity competitor.
+Hey! I’m **Safin**. I'm a self-taught full-stack developer & cybersecurity competitor by day and high-school student by night.
 
 Be sure to check out my...
  - 📌 Pinned projects
