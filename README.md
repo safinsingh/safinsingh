@@ -1,7 +1,5 @@
 ## Hey! I’m **Safin** 👋
 
-Full-stack developer and cybersecurity competitor by day, high school student by night ✨
-
 ### Be sure to check out my...
  - 📌 Pinned projects
  - 👨‍💻 [Website](https://safin.dev)
